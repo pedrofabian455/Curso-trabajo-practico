@@ -49,7 +49,7 @@ public class CursoDAOImpl implements CursoDAO{
                 listado.add(objCurso);
             }
     } catch (Exception e) {
-            System.out.println("Error en la consulta");
+            System.out.println("Error en la consulta" + e);
         }
         return listado;
     }
@@ -83,7 +83,7 @@ public class CursoDAOImpl implements CursoDAO{
             }
             
         }catch(Exception e){
-            System.out.println("Error al insertar" +e);
+            System.out.println("Error al insertar" + e);
         }
         return objCurso;
         

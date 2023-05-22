@@ -31,11 +31,7 @@
         <h1>Pagina de Registro de Curso</h1>
         <div class="container">
         <form action="<%= request.getContextPath() %>/CursoServlet?action=create" method="POST">
-             <div class="mb-3">
-            <label for="id" class="form-label"> Id:</label> 
-            <input type="text" class="form-control"  name="id" id="id" required minlength="1" maxlength="100" placeholder="Introduzca id">
-             </div>
-            <br>
+             
             <div class="mb-3">
             <label for="nombre" class="form-label">Nombre:</label>
             <input type="text" class="form-control"  name="nombre" id="nombre" required minlength="1" maxlength="100" placeholder="Introduzca nombre">
